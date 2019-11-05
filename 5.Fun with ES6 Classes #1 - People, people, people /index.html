@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+
+            constructor(firstName, lastName, age, gender) {
+                this.firstName = firstName == undefined ? "John" : firstName;
+                this.lastName = lastName == undefined ? "Doe" : lastName;
+                this.age = age == undefined ? 0 : age;
+                this.gender = gender == undefined ? "Male" : gender;
+            }
+
+            sayFullName() {
+                return this.firstName + ' ' + this.lastName;
+            }
+            static greetExtraTerrestrials(raceName) {
+                return `Welcome to Planet Earth raceName ${raceName}`
+            }
+
+        }
+    </script>
+</body>
+
+</html>
